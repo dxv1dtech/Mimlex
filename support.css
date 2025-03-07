@@ -1,0 +1,97 @@
+body{
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header{
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.support{
+    text-align: center;
+}
+
+.support h1{
+    font-size: 36px;
+}
+
+.support p{
+    font-size: 20px;
+    color: #555;
+}
+
+.button{
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons a{
+    color: white;
+}
+
+.primary{
+    background-color: #00BFFF;
+}
+
+.primary:hover{
+    background-color: #3457D5;
+}
+
+.secondary{
+    background-color: #00BFFF;
+}
+
+.secondary:hover{
+    background-color: #3457D5;
+}

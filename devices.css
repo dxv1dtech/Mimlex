@@ -1,0 +1,116 @@
+body{
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header{
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.devices{
+    margin: auto;
+    margin-top: 60px;
+    background-color: #D3D3D3;
+    max-width: 70%;
+    border-radius: 20px;
+}
+
+.devices .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ensures proper centering */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.devices .device{
+    width: calc(25% - 20px); /* 4 items per row */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.device img{
+    width: 180px; /* Enforces uniform width */
+    height: 230px; /* Enforces uniform height */
+    object-fit: cover; /* Prevents distortion */
+    border-radius: 10px;
+}
+
+.device p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    min-height: 24px; /* Ensures all text areas have the same height */
+}
+
+@media (max-width: 690px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-right: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        width: auto;
+        margin-top: 10px;
+    }
+    .devices{
+        max-width: 100%;
+    }
+    .devices .device {
+        width: calc(50% - 20px); /* 2 per row */
+    }
+}

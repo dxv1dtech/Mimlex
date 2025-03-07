@@ -1,0 +1,196 @@
+body{
+    font-family: 'Product Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+header{
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+.hero{
+    padding: 60px 0;
+    width: 100%;
+}
+
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-text{
+    width: 30%;
+}
+
+.hero-text h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #555;
+}
+
+.hero-image{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image img{
+    max-width: 100%;
+}
+
+.button{
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.buttons a{
+    color: white;
+}
+
+.primary{
+    background-color: #00BFFF;
+}
+
+.primary:hover{
+    background-color: #3457D5;
+}
+
+.secondary{
+    margin-left: 10px;
+    outline-style: solid;
+    outline-color: #00BFFF;
+}
+
+.secondary:hover{
+    background-color: #3457D5;
+    outline-style: none;
+}
+
+.mimlexintelligence{
+     text-align: center;
+     padding: 60px 0;
+}
+.mimlexintelligence h1{
+    font-size: 46px;
+    background: linear-gradient(270deg, rgb(240, 95, 49) 30%, rgb(234, 71, 147) 20.9009%, rgb(63, 134, 198) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.mimlexintelligence p{
+    font-size: 20px;
+    margin: 15px 0;
+    color: #555;
+}
+
+.mimlexintelligence img{
+    margin-top: 20px;
+    max-width: 35%;
+}
+
+.improvedui{
+    text-align: center;
+    padding: 60px 0;
+}
+.improvedui h1{
+   font-size: 46px;
+   background: linear-gradient(270deg, rgb(240, 95, 49) 30%, rgb(234, 71, 147) 20.9009%, rgb(63, 134, 198) 100%);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+
+.improvedui p{
+   font-size: 20px;
+   margin: 15px 0;
+   color: #555;
+}
+
+.improvedui img{
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+@media (max-width: 690px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-right: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        width: auto;
+        margin-top: 10px;
+    }
+    .hero-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text{
+        text-align: center;
+        width: 100%;
+    }
+    .hero-image{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
